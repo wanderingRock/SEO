@@ -118,6 +118,14 @@ description 雖然都有字數限制，但彈性就大得多，會視乎關鍵�
 <meta name="robots" content="noindex,nofollow">
 ```
 
+index vs noindex   
+
+當你不希望搜尋引擎索引此頁面，就填上noindex，若希望正常索引便填上index  
+
+follow vs nofollow   
+
+至於follow這個值是指，若你希望搜尋引擎在檢索此頁面時，不進一步的去檢索該頁面所連出去的連結，你就填上nofollow的值。這個功能通常會用在社群論壇或是網站討論版，是為了防止有人在你的頁面上亂貼連結來意圖增加他的SEO 反向連結及排名，使用nofollow的話搜尋引擎的檢索會在該頁面停止，不繼續往其他連結前進，固可以防止亂貼連結的事情發生。   
+
 ### 7.hreflang
 如果網頁設有多種語言，就需要 hreflang 來提示搜尋引擎展示正確的網頁給不同地區的訪客。  
 ```
