@@ -74,19 +74,19 @@ Google 對於用戶體驗的關注越來越高，
 
 ---
 
-###  Meta tag設定
-1.title   
+#  Meta tag設定
+### 1.title   
 是一個網頁的標題，會在瀏覽器的分頁以及搜尋結果顯示。這是一個重要的標籤，讓搜尋引擎和用戶了解網頁的內容。     
 ```
   <title>よしのん的網站教室 | 集合科技新聞、網站制作、SEO、社交媒體經營的文章</title>
 ```
-2.description   
+### 2.description   
 description 雖然都有字數限制，但彈性就大得多，會視乎關鍵字而改變長度。    
 如 description 的字眼與搜尋字眼吻合，就會以另一種顏色突顯。因此，description 的內容亦值得花時間研究以提高點擊率。   
 ```
 <meta name="description"  content="不少人都會在網誌（blog）上加入 AdSense 廣告以賺取額外收入，但到底 AdSense 收入可以達到甚麼水平？這筆收入是不是十分可觀？其實對一般網誌而言，AdSense 的收入只是聊勝於無，如要依賴 AdSense 收入過日子，網站必須極具規模。" />
 ```
-3.canonical  
+### 3.canonical  
 基於多種原因，一個網頁可能會多種網址，為了避免內容重複導致搜尋引擎懲罰，  
 每個網頁都應加入 canonical 網址，讓搜尋引擎識別不同網址但網頁內容相同的唯一「標準」網址。  
 
@@ -94,20 +94,20 @@ description 雖然都有字數限制，但彈性就大得多，會視乎關鍵�
 <link rel="canonical" href="https://ysnweb.net/2019/12/web-monetisation/google-adsense-how-much-income/" />
 ```
 
-4.charset
+### 4.charset
 指定瀏覽器展示網頁時的採用的字元編碼，雖然與 SEO 無關，但亦是必要的標籤。現時，   
 大部分的網頁都採用 UTF-8，但某些時候會採用其他編碼，如 GBK 等。  
 ```
 <meta charset="UTF-8"> 
 ```
 
-5.viewport
+### 5.viewport
 搜尋引擎偏好支援流動裝置的網頁，其中又以回應式網頁設計（Responsive Web Design）最為可取。   
 如要網頁在各裝置中正確呈現，就必須有正確的 viewport 設定  
 ```
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
 ```
-6.robot
+### 6.robot
 搜尋引擎會透過爬蟲程式（crawler/ spider）讀取網頁資訊，然後為網頁索引。  
 一般而言，如果網頁沒有設定 robot 的話，就會接受所有搜尋引擎索引，在搜尋結果出現。   
 除非網頁不宜在搜尋引擎中展示，否則毋須使用 robot 標籤。  
@@ -118,7 +118,13 @@ description 雖然都有字數限制，但彈性就大得多，會視乎關鍵�
 <meta name="robots" content="noindex,nofollow">
 ```
 
-8.og
+### 7.hreflang
+如果網頁設有多種語言，就需要 hreflang 來提示搜尋引擎展示正確的網頁給不同地區的訪客。  
+```
+<link rel="alternate" href="http://example.com" hreflang="en-us" /> 
+```
+
+### 8.og
 og （Open Graph）並非用於 SEO 中，   
 但對網頁於 Facebook、LINE 等社交媒體正確地呈現有莫大幫助，   
 其中 og:title、og:description、og:image 至為重要，  
@@ -142,7 +148,7 @@ Twitter example
 <meta name="twitter:image" content="https://i0.wp.com/ysnweb.net/wp-content/uploads/2019/09/adsense.jpeg?fit=900%2C450&ssl=1" />
 ```
 
-9.keywords
+### 9.keywords
 這本來是讓搜尋引擎了解網頁關鍵字的標籤，但由於遭到濫用，  
 Google 早在 2009 就不再理會。縱使大家仍然可以使用，但不會有實質幫助。  
 事實上，細心留意位居前列的網頁背後的 HTML，亦可見已沒有 keywords。  
